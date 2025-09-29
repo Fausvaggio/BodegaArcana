@@ -1,0 +1,29 @@
+<h3>Estadísticas del Dataset</h3>
+
+<table class="stats-table">
+  <thead>
+    <tr>
+      <th>Característica</th>
+      <th>Mínimo</th>
+      <th>Máximo</th>
+      <th>Media</th>
+      <th>Desv. Estándar</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let f of features">
+      <td>{{ f }}</td>
+      <td>{{ stats[f].min }}</td>
+      <td>{{ stats[f].max }}</td>
+      <td>{{ stats[f].mean | number: '1.2-2' }}</td>
+      <td>{{ stats[f].std | number: '1.2-2' }}</td>
+      <td>{{ stats[f].count ?? '-' }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div #chart></div>
+<p>
+  “Este componente resume las estadísticas descriptivas: mínimo, máximo, media y desviación estándar para cada variable. Además, con los boxplots podemos ver de forma compacta el rango típico de cada característica. Es la base para entender el dataset antes de entrenar modelos.”
+</p>

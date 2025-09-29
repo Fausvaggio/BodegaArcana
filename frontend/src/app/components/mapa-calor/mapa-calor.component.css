@@ -1,0 +1,32 @@
+h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.selector {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.features label {
+  font-size: 13px;
+}
+
+svg {
+  border: 1px solid #ccc;
+  background-color: #fafafa;
+}
+
+rect:hover {
+  stroke: #000;
+  stroke-width: 1px;
+  cursor: pointer;
+}

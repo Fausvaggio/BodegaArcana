@@ -1,0 +1,21 @@
+<h3>Explicación de Predicción (SHAP)</h3>
+
+<form [formGroup]="form" (ngSubmit)="explicar()" class="panel">
+  <label for="payload">Payload (JSON para /api/explain/explain_prediction)</label>
+  <textarea id="payload" formControlName="payload" rows="14"></textarea>
+
+  <button type="submit" [disabled]="cargando">
+    {{ cargando ? 'Calculando…' : 'Explicar predicción' }}
+  </button>
+</form>
+
+<div class="resumen" *ngIf="prediction !== undefined">
+  <div class="card"><span class="k">Predicción</span><span class="v">{{ prediction }}</span></div>
+  <div class="card" *ngIf="expectedValue !== undefined"><span class="k">Valor esperado</span><span class="v">{{ expectedValue }}</span></div>
+  <div class="card" *ngIf="model"><span class="k">Modelo</span><span class="v">{{ model }}</span></div>
+</div>
+
+<div #chart></div>
+<p>
+  “Aquí analizamos un caso individual: dado un vino con ciertas características, mostramos cuánto aportó cada variable a la decisión del modelo usando SHAP values. Esto nos permite responder la pregunta: ‘¿Por qué este vino fue clasificado como calidad media y no como alta?’.”
+</p>

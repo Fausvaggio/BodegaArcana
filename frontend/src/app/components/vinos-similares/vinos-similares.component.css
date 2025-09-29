@@ -1,0 +1,39 @@
+h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+input[type="range"], select {
+  width: 100%;
+}
+
+button {
+  width: 220px;
+  margin: 15px auto;
+  padding: 8px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #125ca1;
+}
+
+svg {
+  border: 1px solid #ccc;
+}

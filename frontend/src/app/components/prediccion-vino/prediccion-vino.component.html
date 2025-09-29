@@ -1,0 +1,38 @@
+<h3>Predicción de Calidad del Vino</h3>
+
+<div class="sliders">
+  <div *ngFor="let key of (parametros | keyvalue)">
+    <label>{{ key.key }}: {{ key.value }}</label>
+    <input
+      *ngIf="esNumero(key.value)"
+      type="range"
+      [min]="0"
+      [max]="key.key === 'alcohol' ? 15 : 300"
+      [step]="0.1"
+      [ngModel]="getParametro(key.key)"
+      (ngModelChange)="setParametro(key.key, $event)"
+    />
+  </div>
+</div>
+
+<div class="acciones">
+  <label>Modelo:</label>
+  <select [(ngModel)]="parametros.model_choice">
+    <option value="rf">Random Forest</option>
+    <option value="gb">Gradient Boosting</option>
+    <option value="nn">Neural Net</option>
+  </select>
+
+  <label>Tipo de vino:</label>
+  <select [(ngModel)]="parametros.wine_type">
+    <option [value]="0">Blanco</option>
+    <option [value]="1">Tinto</option>
+  </select>
+
+  <button (click)="predecir()">Predecir</button>
+</div>
+
+<div id="chart" class="chart"></div>
+<p>
+  “Este componente permite simular un vino ajustando sus características con sliders. El modelo predice si el vino es de calidad baja, media o alta, y lo mostramos con un indicador visual simple y claro. Es la parte más interactiva para que el usuario experimente con los datos.”
+</p>

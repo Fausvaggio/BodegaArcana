@@ -1,0 +1,47 @@
+h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.selector {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.selector button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background: #1976d2;
+  color: #fff;
+  cursor: pointer;
+}
+
+.selector button:hover {
+  background: #0d47a1;
+}
+
+.selector label {
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+svg {
+  border: 1px solid #ccc;
+  background-color: #fafafa;
+}
+
+rect:hover {
+  stroke: #000;
+  stroke-width: 1px;
+  cursor: pointer;
+}

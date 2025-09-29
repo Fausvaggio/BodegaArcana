@@ -1,0 +1,29 @@
+h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.stats-table {
+  width: 90%;
+  margin: 0 auto 20px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.stats-table th,
+.stats-table td {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  text-align: center;
+}
+
+.stats-table th {
+  background: #f0f0f0;
+}
+
+svg {
+  border: 1px solid #ccc;
+  background-color: #fafafa;
+  display: block;
+  margin: 0 auto;
+}

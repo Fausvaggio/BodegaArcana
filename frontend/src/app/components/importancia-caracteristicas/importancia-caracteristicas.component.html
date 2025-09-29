@@ -1,0 +1,13 @@
+<h3>Importancia de las Características</h3>
+
+<div class="selector">
+  <label for="modelo">Selecciona un modelo:</label>
+  <select id="modelo" [(ngModel)]="modelChoice" (change)="cargarDatos()">
+    <option *ngFor="let m of modelosDisponibles" [value]="m">{{ m.toUpperCase() }}</option>
+  </select>
+</div>
+
+<div #chart></div>
+<p>
+  “En este gráfico se presenta la importancia relativa de cada variable para el modelo. Por ejemplo, se puede ver que el alcohol y la acidez volátil son factores determinantes para predecir la calidad. Esta visualización conecta el análisis de datos con la interpretación del modelo.”
+</p>

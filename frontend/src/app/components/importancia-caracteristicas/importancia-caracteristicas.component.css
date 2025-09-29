@@ -1,0 +1,30 @@
+h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.selector {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+select {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+svg {
+  border: 1px solid #ccc;
+  background-color: #fafafa;
+}
+
+rect:hover {
+  fill: darkorange;
+  cursor: pointer;
+}
+
+text {
+  font-size: 11px;
+  fill: #333;
+}

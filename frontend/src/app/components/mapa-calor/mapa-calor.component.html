@@ -1,0 +1,16 @@
+<h3>Mapa de Calor: Características vs Calidad</h3>
+
+<div class="selector">
+  <p>Selecciona las características a incluir:</p>
+  <div class="features">
+    <label *ngFor="let f of features">
+      <input type="checkbox" [checked]="seleccionadas.includes(f)" (change)="toggleFeature(f)">
+      {{ f }}
+    </label>
+  </div>
+</div>
+
+<div #chart></div>
+<p>
+  “El mapa de calor muestra cómo varían los valores promedio de las características según la calidad. Esto permite ver de forma global cuáles variables suben o bajan cuando la calidad mejora o empeora, resaltando patrones en todo el dataset en una sola visualización.”
+</p>

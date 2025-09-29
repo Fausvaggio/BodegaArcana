@@ -1,0 +1,72 @@
+h3 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.panel {
+  display: grid;
+  gap: 8px;
+  max-width: 900px;
+  margin: 0 auto 12px auto;
+}
+
+textarea {
+  width: 100%;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 13px;
+  padding: 10px;
+  border: 1px solid #cfcfcf;
+  background: #fbfbfb;
+  border-radius: 6px;
+}
+
+button {
+  width: fit-content;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #1976d2;
+  color: #fff;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.resumen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 8px auto 16px;
+}
+.card {
+  min-width: 180px;
+  border: 1px solid #e0e0e0;
+  background: #fafafa;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.card .k {
+  color: #555;
+  font-weight: 600;
+}
+.card .v {
+  color: #111;
+}
+
+svg {
+  border: 1px solid #ddd;
+  background: #fff;
+  display: block;
+  margin: 0 auto 24px auto;
+}
+
+.bar-group rect:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}

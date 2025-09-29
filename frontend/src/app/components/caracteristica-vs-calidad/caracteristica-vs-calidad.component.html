@@ -1,0 +1,14 @@
+<h3>Características vs Calidad</h3>
+
+<div class="selector">
+  <label for="features">Selecciona características:</label>
+  <select id="features" multiple [(ngModel)]="featuresSeleccionadas" (change)="cargarDatos()">
+    <option *ngFor="let f of featuresDisponibles" [value]="f">{{ f }}</option>
+  </select>
+  <p><small>(Usa CTRL o SHIFT para elegir varias)</small></p>
+</div>
+
+<div #chart></div>
+<p>
+  “Este componente muestra, con boxplots, la distribución de cada característica según la calidad. Nos permite observar la variabilidad, rangos típicos y presencia de valores atípicos. Es muy útil para explicar por qué una misma característica puede influir distinto dependiendo del rango en el que se encuentre.”
+</p>

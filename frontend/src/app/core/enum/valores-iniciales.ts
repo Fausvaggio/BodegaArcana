@@ -1,0 +1,16 @@
+export enum ValoresInicialesEnum {
+    Vacio = '',
+    Cero = 0,
+    Uno = 1,
+    Cinco = 5,    
+    TamanoInicialPagina = 5,
+    TamanoInicialPaginaMedio = 10,
+    TamanoInicialPaginaLarge = 20,
+    TamanoInicialPaginaXLarge = 50,
+    FechaInicioBusqueda = '1900-01-01',
+    ItemsPorPaginaBusqueda = 10,
+    MaximoBotonesPaginaBusqueda = 5,
+    CodigoNumeroPeru = '51',
+    DiasExpiracionPago = 2,
+    Peru = 1,
+}

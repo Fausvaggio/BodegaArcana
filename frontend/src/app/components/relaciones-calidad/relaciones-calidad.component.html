@@ -1,0 +1,16 @@
+<h3>Relaciones de características</h3>
+
+<div class="selector">
+  <label for="calidad1">Calidad principal:</label>
+  <select id="calidad1" [(ngModel)]="calidad1" (change)="cargarDatos()">
+    <option *ngFor="let q of [3,4,5,6,7,8,9]" [value]="q">{{ q }}</option>
+  </select>
+
+  <label for="calidad2">Comparar con:</label>
+  <select id="calidad2" [(ngModel)]="calidad2" (change)="cargarDatos()">
+    <option *ngFor="let q of [3,4,5,6,7,8,9]" [value]="q">{{ q }}</option>
+  </select>
+</div>
+
+<div #barChart></div>
+<p>“Aquí comparamos las características químicas promedio de los vinos por nivel de calidad. Por ejemplo, los vinos con mayor calidad tienden a tener más alcohol y menos acidez volátil. Este tipo de comparación nos ayuda a identificar qué patrones químicos diferencian un vino bueno de uno regular.”</p>

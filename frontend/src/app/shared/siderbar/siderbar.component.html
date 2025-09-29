@@ -1,0 +1,132 @@
+<!-- BEGIN: Side Menu -->
+<nav class="side-nav hidden w-[80px] overflow-x-hidden pb-16 pr-5 md:block xl:w-[230px]">
+    <div class="flex items-center pt-4 pl-5 intro-x">
+        <img class="w-10" src="./dist/images/logotipo/isotipo-bodega-arcana-white.png" alt="{{clientName}} ">
+        <span class="hidden ml-3 text-lg text-white xl:block"> BODEGA ARCANA </span>
+    </div>
+    <div class="my-6 side-nav__divider"></div>
+    <ul>        
+        <li>
+            <a routerLink="/dashboard" (click)="AsignarTituloMenu('dashboard','')"
+                [ngClass]="tituloMenu == 'dashboard' ? 'side-menu side-menu--active' : 'side-menu'">
+                <div class="side-menu__icon">
+                    <i data-tw-merge="" data-lucide="home" class="stroke-1.5 w-5 h-5"></i>
+                </div>
+                <div class="side-menu__title">
+                    Dashboard
+                </div>
+            </a>
+        </li>
+        <li>
+            <a routerLink="/prediccion-vino" (click)="AsignarTituloMenu('prediccion-vino','')"
+                [ngClass]="tituloMenu == 'prediccion-vino' ? 'side-menu side-menu--active' : 'side-menu'">
+                <div class="side-menu__icon">
+                    <i data-tw-merge="" data-lucide="git-branch" class="stroke-1.5 w-5 h-5"></i>
+                </div>
+                <div class="side-menu__title">
+                    Predicción vino
+                </div>
+            </a>
+        </li>
+        <li>
+            <a routerLink="/vinos-similares" (click)="AsignarTituloMenu('vinos-similares','')"
+                [ngClass]="tituloMenu == 'vinos-similares' ? 'side-menu side-menu--active' : 'side-menu'">
+                <div class="side-menu__icon">
+                    <i data-tw-merge="" data-lucide="inbox" class="stroke-1.5 w-5 h-5"></i>
+                </div>
+                <div class="side-menu__title">
+                    Vinos similares
+                </div>
+            </a>
+        </li> 
+        <li>
+            <a routerLink="/distribucion-calidad" (click)="AsignarTituloMenu('distribucion-calidad','')"
+                [ngClass]="tituloMenu == 'distribucion-calidad' ? 'side-menu side-menu--active' : 'side-menu'">
+                <div class="side-menu__icon">
+                    <i data-tw-merge="" data-lucide="home" class="stroke-1.5 w-5 h-5"></i>
+                </div>
+                <div class="side-menu__title">
+                    Distribución calidad
+                </div>
+            </a>
+        </li> 
+        <li>
+            <a routerLink="/relaciones-calidad" (click)="AsignarTituloMenu('relaciones-calidad','')"
+                [ngClass]="tituloMenu == 'relaciones-calidad' ? 'side-menu side-menu--active' : 'side-menu'">
+                <div class="side-menu__icon">
+                    <i data-tw-merge="" data-lucide="toggle-right" class="stroke-1.5 w-5 h-5"></i>
+                </div>
+                <div class="side-menu__title">
+                    Relaciones calidad
+                </div>
+            </a>
+        </li> 
+        <li>
+            <a routerLink="/caracteristica-vs-calidad" (click)="AsignarTituloMenu('caracteristica-vs-calidad','')"
+                [ngClass]="tituloMenu == 'caracteristica-vs-calidad' ? 'side-menu side-menu--active' : 'side-menu'">
+                <div class="side-menu__icon">
+                    <i data-tw-merge="" data-lucide="voicemail" class="stroke-1.5 w-5 h-5"></i>
+                </div>
+                <div class="side-menu__title">
+                    Característica vs calidad
+                </div>
+            </a>
+        </li> 
+        <li>
+            <a routerLink="/mapa-calor" (click)="AsignarTituloMenu('mapa-calor','')"
+                [ngClass]="tituloMenu == 'mapa-calor' ? 'side-menu side-menu--active' : 'side-menu'">
+                <div class="side-menu__icon">
+                    <i data-tw-merge="" data-lucide="cpu" class="stroke-1.5 w-5 h-5"></i>
+                </div>
+                <div class="side-menu__title">
+                    Mapa calor
+                </div>
+            </a>
+        </li> 
+        <li>
+            <a routerLink="/importancia-caracteristicas" (click)="AsignarTituloMenu('importancia-caracteristicas','')"
+                [ngClass]="tituloMenu == 'importancia-caracteristicas' ? 'side-menu side-menu--active' : 'side-menu'">
+                <div class="side-menu__icon">
+                    <i data-tw-merge="" data-lucide="cloud" class="stroke-1.5 w-5 h-5"></i>
+                </div>
+                <div class="side-menu__title">
+                    Importancia características
+                </div>
+            </a>
+        </li> 
+        <li>
+            <a routerLink="/explicacion-prediccion" (click)="AsignarTituloMenu('explicacion-prediccion','')"
+                [ngClass]="tituloMenu == 'explicacion-prediccion' ? 'side-menu side-menu--active' : 'side-menu'">
+                <div class="side-menu__icon">
+                    <i data-tw-merge="" data-lucide="crosshair" class="stroke-1.5 w-5 h-5"></i>
+                </div>
+                <div class="side-menu__title">
+                    Explicación predicción
+                </div>
+            </a>
+        </li> 
+        <li>
+            <a routerLink="/matriz-correlacion" (click)="AsignarTituloMenu('matriz-correlacion','')"
+                [ngClass]="tituloMenu == 'matriz-correlacion' ? 'side-menu side-menu--active' : 'side-menu'">
+                <div class="side-menu__icon">
+                    <i data-tw-merge="" data-lucide="bold" class="stroke-1.5 w-5 h-5"></i>
+                </div>
+                <div class="side-menu__title">
+                    Matriz correlación
+                </div>
+            </a>
+        </li> 
+        <li>
+            <a routerLink="/estadisticas-datasets" (click)="AsignarTituloMenu('estadisticas-datasets','')"
+                [ngClass]="tituloMenu == 'estadisticas-datasets' ? 'side-menu side-menu--active' : 'side-menu'">
+                <div class="side-menu__icon">
+                    <i data-tw-merge="" data-lucide="bar-chart2" class="stroke-1.5 w-5 h-5"></i>
+                </div>
+                <div class="side-menu__title">
+                    Estadísticas datasets
+                </div>
+            </a>
+        </li>   
+    </ul>
+</nav>
+<!-- END: Side Menu -->

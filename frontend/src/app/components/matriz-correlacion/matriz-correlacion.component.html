@@ -1,0 +1,22 @@
+<h3>Matriz de Correlación</h3>
+
+<div class="selector">
+  <button (click)="seleccionarTodo()">Seleccionar todo</button>
+  <button (click)="limpiarTodo()">Limpiar todo</button>
+  <label>
+    <input type="checkbox" [(ngModel)]="usarAbsoluto" (change)="toggleAbsoluto()" />
+    Mostrar valores absolutos
+  </label>
+</div>
+
+<div class="features">
+  <label *ngFor="let f of features">
+    <input type="checkbox" [checked]="seleccionadas.includes(f)" (change)="toggleFeature(f)" />
+    {{ f }}
+  </label>
+</div>
+
+<div #chart></div>
+<p>
+  “La matriz de correlación revela qué características del vino están relacionadas entre sí. Por ejemplo, la densidad suele correlacionar con el azúcar residual. Esto ayuda a evitar redundancias y a entender dependencias dentro del dataset.”
+</p>
