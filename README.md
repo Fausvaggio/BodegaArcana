@@ -46,6 +46,6 @@ El dashboard permite:
 ### 👩‍💻 Equipo de desarrollo
 
 BodegaArcana Team
-Karla Patricia Aliaga Colque
-Fausto Danilo Esthela Espinoza
-Carlos Alonso Alcocer Pari
+- Karla Patricia Aliaga Colque
+- Fausto Danilo Esthela Espinoza
+- Carlos Alonso Alcocer Pari
