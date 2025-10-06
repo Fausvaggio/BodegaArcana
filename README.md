@@ -23,26 +23,23 @@ Además del análisis, desarrollamos un **dashboard interactivo** para visualiza
 - **Referencia:** Cortez et al., *Modeling wine preferences by data mining from physicochemical properties*, *Decision Support Systems*, 2009.
 
 ---
+### 📈 Modelos entrenados
+Se entrenaron tres modelos principales para la clasificación de la variable `quality_category`:
 
-### ⚙️ Tecnologías utilizadas
-#### Backend / Ciencia de datos
-- **Python 3.12**
-- **pandas**, **numpy**, **scikit-learn**
-- **Matplotlib**, **Seaborn**, **Plotly** (visualizaciones)
-- **Flask** (API REST)
-- **Joblib** (persistencia de modelos)
-- **Jupyter / Google Colab** (análisis exploratorio y entrenamiento)
+| Modelo | Precisión (accuracy) | Observaciones |
+|--------|----------------------|----------------|
+| Random Forest | **82.31%** | Mejor desempeño general |
+| Gradient Boosting | 76.31% | Moderada, sensible a desbalance |
+| Red Neuronal (MLPClassifier) | 75.46% | Requiere tuning adicional |
 
-#### Frontend
-- **Angular 17**
-- **TypeScript**
-- **Tailwind CSS / Bootstrap**
-- **Axios / HTTPClient** para comunicación con API Flask
+---
 
-#### Control de versiones y despliegue
-- **Git / GitHub**
-- **Docker** (opcional para empaquetado)
-- **Render / Vercel / GitHub Pages** para hosting
+### 💡 Dashboard interactivo
+El dashboard permite:
+- Visualizar **distribuciones**, **mapas de calor**, **correlaciones** y **curvas por calidad**.  
+- Comparar vinos blancos y tintos.  
+- Probar el **módulo de predicción**, ingresando valores como alcohol, pH o acidez volátil.  
+- Ver explicaciones locales (SHAP) sobre por qué un vino fue clasificado como *medio* o *alto*.
 
 ---
 
